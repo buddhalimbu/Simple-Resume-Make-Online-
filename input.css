@@ -38,7 +38,8 @@
 }
 .input-body h1 {
   font-size: 24px;
-  text-decoration: underline
+  text-decoration: underline;
+  padding-bottom:14px
 }
 .input-body div input {
   padding:12px 10px;
@@ -49,7 +50,7 @@
   border-radius: 0px
 }
 
-.input-body div input:focus {
+.input-body div input:focus,.input-body textarea:focus{
   border: 1px solid #00cba9;
   transition:0.4s ease-in-out
 }

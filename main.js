@@ -151,7 +151,12 @@ function check(){
 
 
   function download(x) {
-
+const d = document.querySelector(".download");
+const orihtml = d.innerHTML;
+d.innerHTML = "Downloading..";
+setTimeout(()=>{
+  d.innerHTML=orihtml
+},4000);
     const captureElement = document.querySelector(".resume");
 
     html2canvas(captureElement)

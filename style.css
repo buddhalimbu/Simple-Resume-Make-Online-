@@ -145,8 +145,8 @@ svg {
 
 
 @media print {
-  .btn {
-    display: none;
+  .btn,.btn-gen1{
+    display: none!important 
   }
 }
 

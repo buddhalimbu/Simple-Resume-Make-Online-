@@ -229,7 +229,7 @@ margin-right: 5px
     margin:0 auto;
     
   }
-  .btn {
+  .btn,.author{
     display: none;
   }
   .btn-gen1,.btn-gen2,.btn-gens1,.btn-gens2 {

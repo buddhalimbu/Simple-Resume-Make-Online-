@@ -124,7 +124,7 @@ svg {
 }
 
 .info div span {
-  padding:6px 0;
+  padding:3px 0;
 }
 .info div span:last-child{
   color:#111;
@@ -188,7 +188,7 @@ svg {
 }
 
 .infos div span {
-  padding:6px 0;
+  padding:3px 0;
 }
 .infos div span:last-child{
   color:#111;
@@ -232,7 +232,7 @@ margin-right: 5px
   .btn,.author{
     display: none;
   }
-  .btn-gen1,.btn-gen2,.btn-gens1,.btn-gens2 {
+  .btn-gen1,.btn-gen2,.btn-gens1,.btn-gens2,.author{
     display: none!important;
   }
   .gen-simple,.gen-unique{

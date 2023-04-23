@@ -1,392 +1,453 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8" />
 
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link href="/input.css" rel="stylesheet"/>
-   <script
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Online Resume Maker by - Buddha</title>
+
+        <!-- HTML -->
+
+        <!-- Custom Styles -->
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link href="/input.css" rel="stylesheet" />
+
+        <script
             src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.0/html2canvas.min.js"
             integrity="sha512-p5W+nH7IPev0UO5BT4LCXjVSK9ULZw6MYAeq7LdxTMEHmYsAkOrMyrHs5uSSGmT86lUvyJp3BDP/kkL9Nw2g7g=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
-</head>
+    </head>
 
-<body>
-  
-  <div class="cv-btns">
-    <div class="bubble-container">
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-    <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-</div>
+    <body>
+        <div class="cv-btns">
+            <div class="bubble-container">
+                <div class="bubble"></div>
 
-    <div class="div">
-    <p> If you are looking for creating your <span>simple resume for you</span> then , You are at right place, Choose your platform below to <span>get started.</span>
-    </p>
-    <button onclick="genS();" class="cv-simple">Generate Plain &#9660;</button>
-    <button onclick="genU();" class="cv-unique">Generate Unique &#9660;</button>
-    </div>
-  </div>
-  
-  
-  
-  
-  
-  
-  
-        <div class="loading"> Wait, We are generating....
-        <br/>
-        <span class="spin"></span>
-      </div>
-    <section class="padd">
-  <div class="resume-wrapper">
-    <div class="wrapper">
+                <div class="bubble"></div>
 
-      
-      
-      <div class="input-wraps">
-        <div class="input-grp">
-          <div class="input-body" id="hide-on-simple">
-            <label for="label" class="input-label">Choose IMAGE (PP SIZE) &#9660;
-  <input id="label" class="input-img" style="display: none" type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
-</label>
-<button class="check" onclick="check();">Check Image</button>
-<br/>
-<span class="alert"></>
-          </div>
-          <div class="input-body">
-            <h1>Information </h1>
-            <div>
-              <span>Name :</span>
-              <input type="text" class="input-name" placeholder="Enter Your name...."/>
-                <span>Age :</span>
-              <input type="number" class="input-age" placeholder="Enter age"/>
-                <span>Date of birth : </span>
-              <input value="1993-11-24" type="date" class="input-date" placeholder="Date"/>
-              <span>Marital Status : </span>
-              <input type="text" class="ms" placeholder="Single / Married / Devorced..."/>
-              <span> ID No : </span>
-              <input type="text" class="idno" placeholder="Passport Or Citizenship No....."/>
-              
-              
-                <span>Father Name :</span>
-              <input type="text" class="input-fname" placeholder="Enter father name"/>
-                <span>Adress :</span>
-              <input type="text" class="input-add" placeholder="Enter address..."/>
-                <span>Blood Group :</span>
-              <input type="text" class="input-bg" placeholder="Enter blood group.."/>
-                <span>Phone No :</span>
-              <input type="number" class="input-phone" placeholder="Enter phone no...."/>
-                <span>E-mail :</span>
-              <input type="email" class="input-email" placeholder="Enter email..."/>
-                <span>Nationality :</span>
-              <input type="text" class="input-nationality" placeholder="Enter nationality...."/>
+                <div class="bubble"></div>
+
+                <div class="bubble"></div>
+
+                <div class="bubble"></div>
+
+                <div class="bubble"></div>
+
+                <div class="bubble"></div>
+
+                <div class="bubble"></div>
+
+                <div class="bubble"></div>
+
+                <div class="bubble"></div>
             </div>
-          </div>
-              
-              
-                      <div class="input-body">
-            <h1>Qualifications </h1>
-            <div>
-                <span>Academic :</span>
-              <input type="text" class="input-collage" placeholder="Enter your qualifications...."/>
-                <span>Computer :</span>
-              <input type="text" class="input-computer" placeholder="Enter computer qualifications..."/>
-              </div>
-                      </div>
-              
-                        <div class="input-body">
-            <h1>Work Experience</h1>
-            <div>
-                <span>Fist Work Experience :</span>
-                              <input type="text" class="input-work1" placeholder="Write your work experience ...." />
-                              <span>Second Work Experience :</span>
-                              <input type="text" class="input-work2" placeholder="Write your work experience ..." />
+
+            <div class="div">
+                <p>If you are looking for creating your <span>simple resume for you</span> then , You are at right place, Choose your platform below to <span>get started.</span></p>
+
+                <button onclick="genS();" class="cv-simple">Generate Plain &#9660;</button>
+
+                <button onclick="genU();" class="cv-unique">Generate Unique &#9660;</button>
             </div>
+        </div>
+
+        <div class="loading">
+            Wait, We are generating....
+
+            <br />
+
+            <span class="spin"></span>
+        </div>
+
+        <section class="padd">
+            <div class="resume-wrapper">
+                <div class="wrapper">
+                    <div class="input-wraps">
+                        <div class="input-grp">
+                            <div class="input-body" id="hide-on-simple">
+                                <label for="label" class="input-label">
+                                    Choose IMAGE (PP SIZE) &#9660;
+
+                                    <input id="label" class="input-img" style="display: none;" type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
+                                </label>
+
+                                <button class="check" onclick="check();">Check Image</button>
+
+                                <br />
+
+                                <span class="alert"></span>
+                            </div>
+
+                            <div class="input-body">
+                                <h1>Information</h1>
+
+                                <div>
+                                    <span>Name :</span>
+
+                                    <input type="text" class="input-name" placeholder="Enter Your name...." />
+
+                                    <span>Age :</span>
+
+                                    <input type="number" class="input-age" placeholder="Enter age" />
+
+                                    <span>Date of birth : </span>
+
+                                    <input value="1993-11-24" type="date" class="input-date" placeholder="Date" />
+
+                                    <span>Marital Status : </span>
+
+                                    <input type="text" class="ms" placeholder="Single / Married / Devorced..." />
+
+                                    <span> ID No : </span>
+
+                                    <input type="text" class="idno" placeholder="Passport Or Citizenship No....." />
+
+                                    <span>Father Name :</span>
+
+                                    <input type="text" class="input-fname" placeholder="Enter father name" />
+
+                                    <span>Adress :</span>
+
+                                    <input type="text" class="input-add" placeholder="Enter address..." />
+
+                                    <span>Blood Group :</span>
+
+                                    <input type="text" class="input-bg" placeholder="Enter blood group.." />
+
+                                    <span>Phone No :</span>
+
+                                    <input type="number" class="input-phone" placeholder="Enter phone no...." />
+
+                                    <span>E-mail :</span>
+
+                                    <input type="email" class="input-email" placeholder="Enter email..." />
+
+                                    <span>Nationality :</span>
+
+                                    <input type="text" class="input-nationality" placeholder="Enter nationality...." />
+                                </div>
+                            </div>
+
+                            <div class="input-body">
+                                <h1>Qualifications</h1>
+
+                                <div>
+                                    <span>Academic :</span>
+
+                                    <input type="text" class="input-collage" placeholder="Enter your qualifications...." />
+
+                                    <span>Computer :</span>
+
+                                    <input type="text" class="input-computer" placeholder="Enter computer qualifications..." />
+                                </div>
+                            </div>
+
+                            <div class="input-body">
+                                <h1>Work Experience</h1>
+
+                                <div>
+                                    <span>Fist Work Experience :</span>
+
+                                    <input type="text" class="input-work1" placeholder="Write your work experience ...." />
+
+                                    <span>Second Work Experience :</span>
+
+                                    <input type="text" class="input-work2" placeholder="Write your work experience ..." />
+                                </div>
+                            </div>
                         </div>
-        </div>
-                   
-             <div class="btn-gen genS" id="genS">
-               <span onclick="generateS();">Generate Plain &#9660;</span></div>  
-               
-                <div class="btn-gen genU" id="genU">
-               <span onclick="generateU();">Generate Unique &#9660;</span></div>  
-             
-               
-               
-                      </div>
-                      
-        <section>
-           <div class="resumeS">
-        <div class="box-bodys">
-          <br/>
-          <h1> Information </h1>
-          <div class="infos">
-            <div>
-              <span>Name </span>
-              <span class="names" >Buddha Raj sanba limbu
-              </span>
-            </div>
-                        <div>
-              <span>Age </span>
-              <span class="ages" >29
-              </span>
-            </div>
-             <div>
-              <span>Date Of Birth </span>
-              <span class="dobs">2050-08-09
-              </span>
-            </div>
-            <div>
-              <span> ID NO </span>
-              <span class="idnoholder">Pa0234355</span>
-            </div>
-            
-            <div>
-              <span> Marital Status </span>
-              <span class="msholder">Single</span>
-            </div>
-            
-            
-             <div>
-              <span>Father Name</span>
-              <span class="fnames">Santa Kumar Sanba Limbu
-              </span>
-            </div>
-              <div>
-              <span>Address </span>
-              <span class="adds" >Jhapa, Nepal
-              </span>
-            </div>
-              <div>
-              <span>blood Group </span>
-              <span class="bgroups" >A+
-              </span>
-            </div>
-              <div>
-              <span>Phone </span>
-              <span class="phones" >+9817988984
-              </span>
-            </div>
-               <div>
-              <span>Email </span>
-              <span class="emails" >bsanbalimbu@gmail.com
-              </span>
-            </div>
-              <div>
-              <span>Nationality</span>
-              <span class="nationalitys" >Nepal.
-              </span>
-            </div>
-          </div>
-         
-        </div>
-                <div class="box-bodys">
-          <h1> Qualifications </h1>
-          <div class="infos">
 
-              <div>
-              <span>Collage</span>
-              <span class="clgs" >Business management 
-              </span>
+                        <div class="btn-gen genS" id="genS">
+                            <span onclick="generateS();">Generate Plain &#9660;</span>
+                        </div>
+
+                        <div class="btn-gen genU" id="genU">
+                            <span onclick="generateU();">Generate Unique &#9660;</span>
+                        </div>
+                    </div>
+
+                    <section>
+                        <div class="resumeS">
+                            <div class="box-bodys">
+                                <br />
+
+                                <h1>Information</h1>
+
+                                <div class="infos">
+                                    <div>
+                                        <span>Name </span>
+
+                                        <span class="names">Buddha Raj sanba limbu </span>
+                                    </div>
+
+                                    <div>
+                                        <span>Age </span>
+
+                                        <span class="ages">29 </span>
+                                    </div>
+
+                                    <div>
+                                        <span>Date Of Birth </span>
+
+                                        <span class="dobs">2050-08-09 </span>
+                                    </div>
+
+                                    <div>
+                                        <span> ID NO </span>
+
+                                        <span class="idnoholder">Pa0234355</span>
+                                    </div>
+
+                                    <div>
+                                        <span> Marital Status </span>
+
+                                        <span class="msholder">Single</span>
+                                    </div>
+
+                                    <div>
+                                        <span>Father Name</span>
+
+                                        <span class="fnames">Santa Kumar Sanba Limbu </span>
+                                    </div>
+
+                                    <div>
+                                        <span>Address </span>
+
+                                        <span class="adds">Jhapa, Nepal </span>
+                                    </div>
+
+                                    <div>
+                                        <span>blood Group </span>
+
+                                        <span class="bgroups">A+ </span>
+                                    </div>
+
+                                    <div>
+                                        <span>Phone </span>
+
+                                        <span class="phones">+9817988984 </span>
+                                    </div>
+
+                                    <div>
+                                        <span>Email </span>
+
+                                        <span class="emails">bsanbalimbu@gmail.com </span>
+                                    </div>
+
+                                    <div>
+                                        <span>Nationality</span>
+
+                                        <span class="nationalitys">Nepal. </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-bodys">
+                                <h1>Qualifications</h1>
+
+                                <div class="infos">
+                                    <div>
+                                        <span>Collage</span>
+
+                                        <span class="clgs">Business management </span>
+                                    </div>
+
+                                    <div>
+                                        <span>Computer </span>
+
+                                        <span class="cps">Basis, Graphics </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-bodys">
+                                <h1>Work Experience</h1>
+
+                                <div class="infos">
+                                    <p class="firstwork">
+                                        I worked as sales person in the tributtb company in 2018.
+                                    </p>
+
+                                    <p class="secondwork">I worked as net.dot developer in hycotech company.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--end resume simple-->
+
+                    <div class="resume">
+                        <div class="head-box">
+                            <div class="img" style="background-image: url('https://avatars.githubusercontent.com/u/53037805?s=96&v=4');"></div>
+
+                            <div class="head-txt">
+                                <h1 class="tname">Buddha Raj Sanba Limbu</h1>
+
+                                <p class="tadd">Jhapa,Nepal</p>
+                            </div>
+                        </div>
+
+                        <div class="box-body">
+                            <br />
+
+                            <h1>Information</h1>
+
+                            <div class="info">
+                                <div>
+                                    <span>Name </span>
+
+                                    <span class="name">Buddha Raj sanba limbu </span>
+                                </div>
+
+                                <div>
+                                    <span>Age </span>
+
+                                    <span class="age">29 </span>
+                                </div>
+
+                                <div>
+                                    <span>Date Of Birth </span>
+
+                                    <span class="dob">2050-08-09 </span>
+                                </div>
+
+                                <div>
+                                    <span> ID NO </span>
+
+                                    <span class="uidnoholder">Pa0234355</span>
+                                </div>
+
+                                <div>
+                                    <span> Marital Status </span>
+
+                                    <span class="umsholder">Single</span>
+                                </div>
+
+                                <div>
+                                    <span>Father Name</span>
+
+                                    <span class="fname">Santa Kumar Sanba Limbu </span>
+                                </div>
+
+                                <div>
+                                    <span>Address </span>
+
+                                    <span class="add">Jhapa, Nepal </span>
+                                </div>
+
+                                <div>
+                                    <span>blood Group </span>
+
+                                    <span class="bgroup">A+ </span>
+                                </div>
+
+                                <div>
+                                    <span>Phone </span>
+
+                                    <span class="phone">+9817988984 </span>
+                                </div>
+
+                                <div>
+                                    <span>Email </span>
+
+                                    <span class="email">bsanbalimbu@gmail.com </span>
+                                </div>
+
+                                <div>
+                                    <span>Nationality</span>
+
+                                    <span class="nationality">Nepal. </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-body">
+                            <h1>Qualifications</h1>
+
+                            <div class="info">
+                                <div>
+                                    <span>Collage</span>
+
+                                    <span class="clg">Business management </span>
+                                </div>
+
+                                <div>
+                                    <span>Computer </span>
+
+                                    <span class="cp">Basis, Graphics </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-body">
+                            <h1>Work Experience</h1>
+
+                            <div class="info">
+                                <p class="fw1">
+                                    I worked as sales person in the tributtb company in 2018.
+                                </p>
+
+                                <p class="fw2">I worked as net.dot developer in hycotech company.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-              <div>
-              <span>Computer </span>
-              <span class="cps" >Basis, Graphics
-              </span>
-            </div>
-             
-          </div>
-         
-        </div>
-                   <div class="box-bodys">
-          <h1> Work Experience</h1>
-          <div class="infos">
-            
-            <p class="firstwork">
-             I worked as sales person in the tributtb company in 2018.
-            </p>
-            
-            
-              <p class="secondwork">I worked as net.dot developer in hycotech company.
-              </p>
-          </div>
-                   </div>
-           </div>
         </section>
-    <!--end resume simple-->          
-              
-      
-      <div class="resume">
-        <div class="head-box">
-          <div class="img" style="background-image: url('https://avatars.githubusercontent.com/u/53037805?s=96&v=4');">
-         </div>
-         
-          <div class="head-txt">
-            <h1 class="tname">Buddha Raj Sanba Limbu</h1>
-            <p class="tadd"> Jhapa,Nepal</p>
-          </div>
-        </div>
-        
-        <div class="box-body">
-          <br/>
-          <h1> Information </h1>
-          <div class="info">
-            <div>
-              <span>Name </span>
-              <span class="name" >Buddha Raj sanba limbu
-              </span>
-            </div>
-                        <div>
-              <span>Age </span>
-              <span class="age" >29
-              </span>
-            </div>
-             <div>
-              <span>Date Of Birth </span>
-              <span class="dob">2050-08-09
-              </span>
-            </div>
-            
-              <div>
-              <span> ID NO </span>
-              <span class="uidnoholder">Pa0234355</span>
-            </div>
-            
-            <div>
-              <span> Marital Status </span>
-              <span class="umsholder">Single</span>
-            </div>
-            
-             <div>
-              <span>Father Name</span>
-              <span class="fname">Santa Kumar Sanba Limbu
-              </span>
-            </div>
-              <div>
-              <span>Address </span>
-              <span class="add" >Jhapa, Nepal
-              </span>
-            </div>
-              <div>
-              <span>blood Group </span>
-              <span class="bgroup" >A+
-              </span>
-            </div>
-              <div>
-              <span>Phone </span>
-              <span class="phone" >+9817988984
-              </span>
-            </div>
-               <div>
-              <span>Email </span>
-              <span class="email" >bsanbalimbu@gmail.com
-              </span>
-            </div>
-              <div>
-              <span>Nationality</span>
-              <span class="nationality" >Nepal.
-              </span>
-            </div>
-          </div>
-         
-        </div>
-                <div class="box-body">
-          <h1> Qualifications </h1>
-          <div class="info">
 
-              <div>
-              <span>Collage</span>
-              <span class="clg" >Business management 
-              </span>
+        <div class="gen-unique">
+            <div class="btn-gen1 btn">
+                <span onclick="window.print();">Download PDF&#9660;</span>
             </div>
-              <div>
-              <span>Computer </span>
-              <span class="cp" >Basis, Graphics
-              </span>
-            </div>
-             
-          </div>
-         
-        </div>
-                   <div class="box-body">
-          <h1> Work Experience</h1>
-          <div class="info">
-           
-            
-                <p class="fw1">
-                  I worked as sales person in the tributtb company in 2018.
-                </p>
-            
-            
-                <p class="fw2">I worked as net.dot developer in hycotech company.
-                </p>
-            
-              </div>
-          </div>
-                
-        </div>
-           
-           
-    </div>
-  </div>
-    </section>
 
-  
-  
-<div class="gen-unique">
-  <div class="btn-gen1 btn">
-               <span onclick="window.print();">Download PDF&#9660;</span></div>   
-                 <div class="btn-gen2">
-               <span class="download" onclick="download()">Download JPG &#9660;</span></div>  
-               </div>
-               
-   <div class="gen-simple">            
-   <div class="btn-gens1 btnS">
-               <span onclick="window.print();">Download Simple PDF &#9660;</span></div>   
-                 <div class="btn-gens2">
-               <span class="download" onclick="downloadS()">Download Simple JPG &#9660;</span></div>  
-   </div>     
-               
-               
-               
-<div class="errorpage"></div>
-<div class="imgholder">
-  <span class="closeme" onclick="Closeme()"> &times;</span>
-  <img src=""/>
-</div>
-  
-  <span class="author" onclick="openov();">Anything ? </span>
-  
-  <div class="ov">
-    <span class="closeme" onclick="this.parentNode.style.display='none'">&times;</span>
-    <div>
-    <p> Creating a successful resume project on onlineresumemaker involves focusing on content, language, design, and layout. Consider job requirements, use clear language, and choose a clean design. Remember to revise and update your resume over time. You can get the github link <a href="https://github.com/buddhalimbu/Simple-Resume-Make-Online-" target="_blank">From here.</a>
-    </p>
-  <a target="_blank" class="author-link" href="https://buddhalimbu.github.io"> Author Buddha</a>
-  </div>
-  </div>
-  
-  <!-- Project -->
-  <script src="main.js"></script>
-</body>
+            <div class="btn-gen2">
+                <span class="download" onclick="download()">Download JPG &#9660;</span>
+            </div>
+        </div>
+
+        <div class="gen-simple">
+            <div class="btn-gens1 btnS">
+                <span onclick="window.print();">Download Simple PDF &#9660;</span>
+            </div>
+
+            <div class="btn-gens2">
+                <span class="download" onclick="downloadS()">Download Simple JPG &#9660;</span>
+            </div>
+        </div>
+
+        <div class="errorpage"></div>
+
+        <div class="imgholder">
+            <span class="closeme" onclick="Closeme()"> &times;</span>
+
+            <img src="" />
+        </div>
+
+        <span class="author" onclick="openov();">Anything ? </span>
+
+        <div class="ov">
+            <span class="closeme" onclick="this.parentNode.style.display='none'">&times;</span>
+
+            <div>
+                <p>
+                    Creating a successful resume project on onlineresumemaker involves focusing on content, language, design, and layout. Consider job requirements, use clear language, and choose a clean design. Remember to revise and
+                    update your resume over time. You can get the github link <a href="https://github.com/buddhalimbu/Simple-Resume-Make-Online-" target="_blank">From here.</a>
+                </p>
+
+                <a target="_blank" class="author-link" href="https://buddhalimbu.github.io"> Author Buddha</a>
+            </div>
+        </div>
+
+        <!-- Project -->
+
+        <script src="main.js"></script>
+    </body>
 </html>
-
-

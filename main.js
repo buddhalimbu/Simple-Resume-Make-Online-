@@ -112,11 +112,13 @@ else {
   let reader = new FileReader();
   let input = document.querySelector(".input-img");
     reader.onload = () => {
-      let img = document.querySelector('.img img');
-      img.src = reader.result;
+      let img = document.querySelector('.img');
+      
+      const imgUrl = reader.result;
+      img.style.backgroundImage = `url('${imgUrl}')`;
     };
     reader.readAsDataURL(input.files[0]);
-  
+
   //merge values of input 
   name.innerHTML= inputname;
   tname.innerHTML=inputname;

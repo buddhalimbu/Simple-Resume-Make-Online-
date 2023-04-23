@@ -357,6 +357,7 @@ body ::placeholder {
   width:100%;
   max-width: 550px;
   padding: 20px;
+  margin:0 auto
 }
 
 .ov div p a {

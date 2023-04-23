@@ -73,14 +73,18 @@ svg {
   justify-content: space-between;
  
 }
-.head-box img {
+.head-box .img {
   height:130px;
   width:130px;
   object-fit: cover;
   -o-object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  display: block
+  display: block;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .head-txt {

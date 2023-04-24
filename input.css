@@ -301,10 +301,11 @@ body ::placeholder {
   display: block;
   width:100%;
   max-width: 500px;
-  height:auto;
+  height:400px;
   object-fit: cover;
   object-position: cover;
-  border-radius: 10px
+  border-radius: 10px;
+
 }
 
 .closeme {

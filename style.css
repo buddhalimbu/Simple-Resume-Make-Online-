@@ -246,23 +246,23 @@ margin-right: 5px
 
 @media screen and (max-width:768px){
   .box-body h1,.box-bodys h1 {
-    font-size: 20px
+    font-size: 28px
   }
   .info div span ,.infos div span {
-    font-size: 14px
+    font-size: 12px
   }
-  .head-box img {
+  .head-box .img {
     width:100px;
     height: 100px
   }
   .head-txt h1 {
-    font-size: 14px
+    font-size: 12px
   }
   .work ,.works{
-    font-size:14px;
+    font-size:12px;
   }
   .firstwork,.secondwork,.fw1,.fw2 {
-    font-size: 14px
+    font-size: 12px
   }
 }
 
